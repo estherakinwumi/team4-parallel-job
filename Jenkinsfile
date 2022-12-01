@@ -30,7 +30,7 @@ pipeline{
                 branch 'feature'
             }
             steps{
-                echo 'we are done'
+                echo 'we are actually done'
           }
        }
     }
