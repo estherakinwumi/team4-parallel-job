@@ -27,7 +27,7 @@ pipeline{
        }
         stage('4-clossing'){
             steps{
-                echo 'we are done'
+                echo 'we are actually done'
           }
        }
     }
