@@ -14,6 +14,9 @@ pipeline{
                 }
             }
             stage('2-subjob2'){
+                when{
+                    branch 'feature'
+                }
                 steps{
                     sh 'df -h'
                 }
@@ -26,8 +29,11 @@ pipeline{
           }
        }
         stage('4-clossing'){
+            when{
+                branch 'main'
+            }
             steps{
-                echo 'we are actually done'
+                echo 'we are done'
           }
        }
     }
